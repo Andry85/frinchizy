@@ -166,134 +166,234 @@
                 </div>
             </div>
             <div class="prod-ct padV2">
-                <div class="navigation">	<ul>
-								<li><a href="">Фабрика дверей</a></li>
-								<li>Список заказов</li>
-							</ul>
-						</div>
-                
-                
-
-                
-                <div class="filter">
-        	
-<div class="list_sity">
-<select>
-  <option selected>Город</option>
-  <option>Москва</option>
-  <option>Владивосток</option>
-  <option>Новгород</option>
-  <option>Новгород</option>
-  <option>Новгород</option>
-  <option>Новгород</option>
-</select>
-</div>
-<div class="list_shop">                    
-<select id="shop_list" >
-  <option selected>Магазин</option>
-  <option>Магазин1</option>
-  <option>Магазин2</option> 
-  <option>Магазин3</option>
- </select>
-</div>                 
- 
-                </div>
-                <div class="filter_butt">
-                    <input class="main-button" id="f_b" value="Показать" type="submit">
-                        <input id="reset_b" class="main-button"  value="Сбросить фильтр" type="submit">
-                </div>
-                
-                <div class="spzakaz" id="sppzakaz">
-                    <ul style="height:60px;">
-                        <li class="date"><span><b>Дата и время</b></span></li>
-                        <li class="num"><span><b>№ Заказа</b></span></li>
-                        <li class="adress"><span><b>Адрес магазина</b></span></li>
-                        <li class="summn"><span><b>Сумма заказа руб.</b></span></li>
-                        <li class="status"><span><b>Статус</b></span></li>
-                         <li class="icons"></li>
-                    </ul>
+                <div class="navigation">	
                     <ul>
-                        <li class="date"><span>25.12.2017<p>13:43</span></li> 
-                        <li class="num"><span> Т - 000023 </li> 
-                        <li class="adress"><span><p>ФД Колпашево, ул. Ленина 32</p> <p>Телефон: 8 28254 40 600</p></span></li> 
-                        <li class="summn"><span>3 344</span></li> 
-                        <li class="status"><span class="blue">Отправлен</span></li> 
-                        <li class="icons" id="iconsc">
-                            
-                            <div class="subicon">
-                                <a href=""><img src="img/glaz.png"/></a>
-                                <a href=""><img src="img/doc.png"/></a>
-                                <a href=""><img src="img/goto.png"/></a>
-                               <a href=""><img src="img/del.png"/></a>
-                               <a href=""><img src="img/print.png"/></a>
-                            </div>
-                            
-                        </li>
-                    </ul>
-                     <ul>
-                        <li class="date"><span>25.12.2017<p>13:43</span></li> 
-                        <li class="num"><span> Т - 000023 </li> 
-                        <li class="adress"><span><p>ФД Колпашево, ул. Ленина 32</p> <p>Телефон: 8 28254 40 600</p></span></li> 
-                        <li class="summn"><span>3 344</span></li> 
-                        <li class="status"><span class="green">Принят в работу</span></li> 
-                          <li class="icons" id="iconsc">
-                            
-                            <div class="subicon">
-                                <a href=""><img src="img/glaz.png"/></a>
-                               
-                                <a href=""><img src="img/goto.png"/></a>
-                               <a href=""><img src="img/del.png"/></a>
-                               <a href=""><img src="img/print.png"/></a>
-                            </div>
-                            
-                        </li>
-                    </ul>
-                     <ul>
-                        <li class="date"><span>25.12.2017<p>13:43</span></li> 
-                        <li class="num"><span> Т - 000023 </li> 
-                        <li class="adress"><span><p>ФД Колпашево, ул. Ленина 32</p> <p>Телефон: 8 28254 40 600</p></span></li> 
-                        <li class="summn"><span>3 344</span></li> 
-                        <li class="status"><span class="orange">Сформирован</span></li> 
-                          <li class="icons" id="iconsc">
-                            
-                            <div class="subicon">
-                                <a href=""><img src="img/glaz.png"/></a>
-                                
-                               <a href=""><img src="img/del.png"/></a>
-                               <a href=""><img src="img/print.png"/></a>
-                            </div>
-                            
-                        </li>
-                    </ul>
-                     <ul>
-                        <li class="date"><span>25.12.2017<p>13:43</span></li> 
-                        <li class="num"><span> Т - 000023 </li> 
-                        <li class="adress"><span><p>ФД Колпашево, ул. Ленина 32</p> <p>Телефон: 8 28254 40 600</p></span></li> 
-                        <li class="summn"><span>3 344</span></li> 
-                        <li class="status"><span class="black">Устарел</span></li> 
-                          <li class="icons" id="iconsc">
-                            
-                            <div class="subicon">
-                                <a href=""><img src="img/glaz.png"/></a>
-                                
-                               <a href=""><img src="img/print.png"/></a>
-                            </div>
-                            
-                        </li>
-                    </ul>
+						<li><a href="">Фабрика дверей</a></li>
+						<li>Список заказов</li>
+					</ul>
+
+				</div>
+            </div>  
+
+            <form method="post" action="#">
+                <div class="selectForm">
                     
-                  
-                    
-                    
+                    <div class="selectForm__row">
+                        <div class="selectForm__col_1">
+                            <div class="selectForm__selectWrap selectForm__selectWrap--city">
+                                <label>Город</label>
+                                <div class="selectForm__select">
+                                    <select>
+                                      <option selected>Выберите...</option>
+                                      <option>Москва</option>
+                                      <option>Владивосток</option>
+                                      <option>Новгород</option>
+                                      <option>Новгород</option>
+                                      <option>Новгород</option>
+                                      <option>Новгород</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="selectForm__selectWrap selectForm__selectWrap--shop">
+                                <label>Магазин</label>
+                                <div class="selectForm__select">
+                                    <select>
+                                      <option selected>Выберите...</option>
+                                      <option>Москва</option>
+                                      <option>Владивосток</option>
+                                      <option>Новгород</option>
+                                      <option>Новгород</option>
+                                      <option>Новгород</option>
+                                      <option>Новгород</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="selectForm__selectWrap selectForm__selectWrap--status">
+                                <label>Статус</label>
+                                <div class="selectForm__select">
+                                    <select>
+                                      <option selected>Выберите...</option>
+                                      <option>Москва</option>
+                                      <option>Владивосток</option>
+                                      <option>Новгород</option>
+                                      <option>Новгород</option>
+                                      <option>Новгород</option>
+                                      <option>Новгород</option>
+                                    </select>
+                                </div>
+                            </div>             
+                        </div>
+                        <div class="selectForm__col_2">
+                            <button class="selectForm__button main-button" type="submit">Показать</button>
+                        </div>
+                        <div class="selectForm__col_3">
+                            <a class="selectForm__close" href="#"></a>
+                        </div>
+                    </div>
+
+                    <div class="selectForm__row">
+                        <div class="selectForm__col_1">
+                            <div class="selectForm__fieldWrap">
+                                <label>ФИО покупателя</label>
+                                <input class="selectForm__field field" type="text" name="">
+                            </div>           
+                        </div>
+                        <div class="selectForm__col_2">
+                            <button class="selectForm__button main-button" type="submit">Показать</button>
+                        </div>
+                        <div class="selectForm__col_3">
+                            <a class="selectForm__close" href="#"></a>
+                        </div>
+                    </div>
+
                 </div>
-                
-                
-                
-                
-                
-               </div>
-            	
-		
+            </form> 
+            <div class="catalogPage">
+                <table class="catalogPageBlock__table catalogPageBlock__table--filter">
+                    <tr>
+                        <th class="catalogPageBlock__col-time">Дата и время</th>
+                        <th class="catalogPageBlock__col-number">№ заказа</th>
+                        <th class="catalogPageBlock__col-address">Адрес магазина</th>
+                        <th class="catalogPageBlock__col-summa">Сумма, руб.</th>
+                        <th class="catalogPageBlock__col-stattus">Статус</th>
+                        <th class="catalogPageBlock__col-action">Действия</th>
+                    </tr>
+                    <tr>
+                        <td class="catalogPageBlock__col-time">
+                            <time>30.08.2018</time><time>13:00</time>
+                        </td>
+                        <td class="catalogPageBlock__col-number">HI8_00005</td>
+                        <td class="catalogPageBlock__col-address">г. Томск, ул. Сергея Лазо 20б</td>
+                        <td class="catalogPageBlock__col-summa">1 780</td>
+                        <td class="catalogPageBlock__col-stattus">
+                            <span class="formed">Сформирован</span>
+                        </td>
+                        <td class="catalogPageBlock__col-action">
+                            <ul class="actionList">
+                               <li class="actionList__item"> 
+                                    <a class="icon-see" href="#"></a>
+                               </li>
+                               <li class="actionList__item"> 
+                                    <a class="icon-print" href="#"></a>
+                               </li>
+                               <li class="actionList__item"> 
+                                    <a class="icon-move" href="#"></a>
+                               </li>
+                               <li class="actionList__item"> 
+                                    <a class="icon-copy" href="#"></a>
+                               </li>
+                               <li class="actionList__item"> 
+                                    <a class="icon-redact" href="#"></a>
+                               </li>
+                               <li class="actionList__item"> 
+                                    <a class="icon-delete" href="#"></a>
+                               </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="catalogPageBlock__col-time">
+                            <time>30.08.2018</time><time>13:00</time>
+                        </td>
+                        <td class="catalogPageBlock__col-number">HI8_00005</td>
+                        <td class="catalogPageBlock__col-address">г. Томск, пр. Комсомольский 7/9</td>
+                        <td class="catalogPageBlock__col-summa">1 780</td>
+                        <td class="catalogPageBlock__col-stattus">
+                            <span class="outdated">Устарел</span>
+                        </td>
+                        <td class="catalogPageBlock__col-action">
+                            <ul class="actionList">
+                               <li class="actionList__item"> 
+                                    <a class="icon-see" href="#"></a>
+                               </li>
+                               <li class="actionList__item"> 
+                                    <a class="icon-print" href="#"></a>
+                               </li>
+                               <li class="actionList__item"> 
+                                    <a class="icon-move" href="#"></a>
+                               </li>
+                               <li class="actionList__item"> 
+                                    <a class="icon-copy" href="#"></a>
+                               </li>
+                               <li class="actionList__item"> 
+                                    <a class="icon-redact" href="#"></a>
+                               </li>
+                               <li class="actionList__item"> 
+                                    <a class="icon-delete" href="#"></a>
+                               </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="catalogPageBlock__col-time">
+                            <time>30.08.2018</time><time>13:00</time>
+                        </td>
+                        <td class="catalogPageBlock__col-number">HI8_00005</td>
+                        <td class="catalogPageBlock__col-address">г. Томск, пер. 1905 года 5а</td>
+                        <td class="catalogPageBlock__col-summa">1 780</td>
+                        <td class="catalogPageBlock__col-stattus">
+                            <span class="sent">Отправлен</span>
+                        </td>
+                        <td class="catalogPageBlock__col-action">
+                            <ul class="actionList">
+                               <li class="actionList__item"> 
+                                    <a class="icon-see" href="#"></a>
+                               </li>
+                               <li class="actionList__item"> 
+                                    <a class="icon-print" href="#"></a>
+                               </li>
+                               <li class="actionList__item"> 
+                                    <a class="icon-move" href="#"></a>
+                               </li>
+                               <li class="actionList__item"> 
+                                    <a class="icon-copy" href="#"></a>
+                               </li>
+                               <li class="actionList__item"> 
+                                    <a class="icon-redact" href="#"></a>
+                               </li>
+                               <li class="actionList__item"> 
+                                    <a class="icon-delete" href="#"></a>
+                               </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="catalogPageBlock__col-time">
+                            <time>30.08.2018</time><time>13:00</time>
+                        </td>
+                        <td class="catalogPageBlock__col-number">HI8_00005</td>
+                        <td class="catalogPageBlock__col-address">г. Томск, ул. Сергея Лазо 20б</td>
+                        <td class="catalogPageBlock__col-summa">1 780</td>
+                        <td class="catalogPageBlock__col-stattus">
+                            <span class="formed">Сформирован</span>
+                        </td>
+                        <td class="catalogPageBlock__col-action">
+                            <ul class="actionList">
+                               <li class="actionList__item"> 
+                                    <a class="icon-see" href="#"></a>
+                               </li>
+                               <li class="actionList__item"> 
+                                    <a class="icon-print" href="#"></a>
+                               </li>
+                               <li class="actionList__item"> 
+                                    <a class="icon-move" href="#"></a>
+                               </li>
+                               <li class="actionList__item"> 
+                                    <a class="icon-copy" href="#"></a>
+                               </li>
+                               <li class="actionList__item"> 
+                                    <a class="icon-redact" href="#"></a>
+                               </li>
+                               <li class="actionList__item"> 
+                                    <a class="icon-delete" href="#"></a>
+                               </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table> 
+            </div>    
+
+   
            
         <!--    <footer id="footer">
                 <div class="open1">Карта сайта</div>
