@@ -2127,7 +2127,7 @@ body.ac {
 .main-page {
   max-width: 1200px;
   position: relative;
-  background: #f6f6f6;
+  background: #f0f0f0;
   *zoom: 1; }
 
 .main-page:after {
