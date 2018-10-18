@@ -1,0 +1,740 @@
+/* .form_1 on */
+.form_1_bg {
+  position: absolute;
+  position: fixed;
+  overflow: scroll;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  z-index: 9;
+  background: rgba(0,0,0,.68);
+}
+
+.form_1_bg::before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  width: 0;
+  vertical-align: middle;
+  z-index: 2;
+  position: relative;
+  z-index: 2;
+}
+
+.form_1_bg::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /*background-color: #000;*/
+  opacity: .68;
+  z-index: 1;
+}
+
+#form_1 {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 4% auto;
+  font-size: initial;
+  position: relative;
+  /* top: 7.1%; */
+  /* left: 18.5%; */
+  width: 90%;
+  max-width: 732px;
+  background-color: #fff;
+  /* background-image: url(../img/form_1_girl.jpg); */
+  /* background-size: contain; */
+  /* background-position: 0% 100%; */
+  /* background-repeat: no-repeat; */
+  z-index: 2;
+}
+#form_1::before {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  background-image: url(../img/form_1_girl.jpg);
+  background-size: contain;
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  /* opacity: .3; */
+}
+
+.form_content {
+  z-index: 15 !important;
+}
+
+#form_1 .form_content {
+  box-sizing: border-box;
+  padding: 0 7% 0 38%;
+  position: relative;
+  z-index: 2;
+}
+
+#form_1 .form_content .form_title {
+  font-family: Roboto;
+  font-size: 30px;
+  color: #000;
+  margin: 8.5% 0 5.9% 0;
+  text-align: left;
+}
+
+#form_1 .form_content .form_desc {
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000;
+  margin: 0 0 1% 0;
+  text-align: left;
+}
+
+#form_1 .form_content .form_body {
+  margin: 10% 0 0 0;
+}
+
+#form_1 .form_content .form_body input {
+  background-color: #f4f4f4;
+  height: 41px;
+  border-radius: 12px;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 0 0 4%;
+  margin: 0 0 1.2% 0;
+  border: 1px solid rgba(0,0,0,0);
+  font-size: 16px;
+}
+
+#form_1 .form_content .form_body > *[placeholder] {
+  color: #5e5e5e;
+  font-family: Roboto;
+}
+
+#form_1 .form_content .form_body textarea {
+  background-color: #f4f4f4;
+  /* height: 41px; */
+  border-radius: 12px;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 4% 0 0 4%;
+  margin: 0 0 1.2% 0;
+  border: none;
+  border: 1px solid rgba(0,0,0,0);
+  font-size: 16px;
+  resize: none;
+}
+
+#form_1 .form_content .form_body button {
+  display: table;
+  border: none;
+  background-color: #dd2a1b;
+  font-family: Roboto;
+  font-size: 16px;
+  color: #fff;
+  margin: 3.9% auto 65px auto;
+  padding: 2.5% 10%;
+  position: relative;
+  border-radius: 20px;
+  left: -2%;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+#form_1 .form_content .form_body button:hover {
+  background: #000;
+}
+
+#form_1 .form_content .form_body input[name="name"] {
+}
+
+#form_1 .form_content .form_body input[name="tel"] {
+}
+
+#form_1 .form_content .form_body input[name="email"] {
+}
+
+#form_1 .form_content .form_body textarea[name="comment"] {
+}
+
+#form_1 .form_content .form_body button[type="submit"] {
+}
+
+#form_1 button[name="close"] {
+  width: 14px;
+  height: 12px;
+  position: absolute;
+  top: 3%;
+  right: 2.5%;
+  background: none;
+  background-image: url(../img/form_1_close_btn.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0 0;
+  z-index: 2;
+}
+
+@media(max-width: 680px) {
+  .form_1_bg {
+  }
+
+  .form_1_bg::before {
+  }
+
+  .form_1_bg::after {
+  }
+
+  #form_1 {
+  }
+
+  #form_1::before {
+    content: '';
+    opacity: .4;
+  }
+
+  #form_1 .form_content {
+    padding: 0 7%;
+  }
+
+  #form_1 .form_content .form_title {
+  }
+
+  #form_1 .form_content .form_desc {
+  }
+
+  #form_1 .form_content .form_body {
+  }
+
+  #form_1 .form_content .form_body input {
+  }
+
+  #form_1 .form_content .form_body > *[placeholder] {
+  }
+
+  #form_1 .form_content .form_body textarea {
+  }
+
+  #form_1 .form_content .form_body button {
+  }
+
+  #form_1 .form_content .form_body input[name="name"] {
+  }
+
+  #form_1 .form_content .form_body input[name="tel"] {
+  }
+
+  #form_1 .form_content .form_body input[name="email"] {
+  }
+
+  #form_1 .form_content .form_body textarea[name="comment"] {
+  }
+
+  #form_1 .form_content .form_body button[type="submit"] {
+  }
+
+  #form_1 button[name="close"] {
+  }
+}
+
+/* .form_1 off */
+
+
+
+/* .form_6 on */
+.form_6_bg {
+  position: absolute;
+  position: fixed;
+  overflow: scroll;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  z-index: 9;
+  background: rgba(0,0,0,.68);
+}
+
+.form_6_bg::before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  width: 0;
+  vertical-align: middle;
+  z-index: 2;
+  position: relative;
+  z-index: 2;
+}
+
+.form_6_bg::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /*background-color: #000;*/
+  opacity: .68;
+  z-index: 1;
+}
+
+#form_6 {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 4% auto;
+  font-size: initial;
+  position: relative;
+  /* top: 7.1%; */
+  /* left: 18.5%; */
+  width: 90%;
+  max-width: 732px;
+  background-color: #fff;
+  /* background-image: url(../img/form_6_girl.jpg); */
+  /* background-size: contain; */
+  /* background-position: 0% 100%; */
+  /* background-repeat: no-repeat; */
+  z-index: 2;
+}
+#form_6::before {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  background-image: url(../img/form_6_bg.png);
+  /*background-size: contain;*/
+  background-position: -150px -100px;
+  background-repeat: no-repeat;
+  /* opacity: .3; */
+}
+
+.form_content {
+  z-index: 15 !important;
+}
+
+#form_6 .form_content {
+  box-sizing: border-box;
+  padding: 0 7% 0 38%;
+  position: relative;
+  z-index: 2;
+}
+
+#form_6 .form_content .form_title {
+  font-family: Roboto;
+  font-size: 30px;
+  color: #000;
+  margin: 8.5% 0 5.9% 0;
+  text-align: left;
+}
+
+#form_6 .form_content .form_desc {
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000;
+  margin: 0 0 1% 0;
+  text-align: left;
+}
+
+#form_6 .form_content .form_body {
+  margin: 10% 0 0 0;
+}
+
+#form_6 .form_content .form_body input {
+  background-color: #f4f4f4;
+  height: 41px;
+  border-radius: 12px;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 0 0 4%;
+  margin: 0 0 1.2% 0;
+  border: 1px solid rgba(0,0,0,0);
+  font-size: 16px;
+}
+
+#form_6 .form_content .form_body > *[placeholder] {
+  color: #5e5e5e;
+  font-family: Roboto;
+}
+
+#form_6 .form_content .form_body textarea {
+  background-color: #f4f4f4;
+  /* height: 41px; */
+  border-radius: 12px;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 4% 0 0 4%;
+  margin: 0 0 1.2% 0;
+  border: none;
+  border: 1px solid rgba(0,0,0,0);
+  font-size: 16px;
+  resize: none;
+}
+
+#form_6 .form_content .form_body button {
+  display: table;
+  border: none;
+  background-color: #dd2a1b;
+  font-family: Roboto;
+  font-size: 16px;
+  color: #fff;
+  margin: 3.9% auto 65px auto;
+  padding: 2.5% 10%;
+  position: relative;
+  border-radius: 20px;
+  left: -2%;
+}
+
+#form_6 .form_content .form_body input[name="name"] {
+}
+
+#form_6 .form_content .form_body input[name="tel"] {
+}
+
+#form_6 .form_content .form_body input[name="email"] {
+}
+
+#form_6 .form_content .form_body textarea[name="comment"] {
+}
+
+#form_6 .form_content .form_body button[type="submit"] {
+}
+
+#form_6 button[name="close"] {
+  width: 14px;
+  height: 12px;
+  position: absolute;
+  top: 3%;
+  right: 2.5%;
+  background: none;
+  background-image: url(../img/form_1_close_btn.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0 0;
+  z-index: 2;
+}
+
+@media(max-width: 680px) {
+  .form_6_bg {
+  }
+
+  .form_6_bg::before {
+  }
+
+  .form_6_bg::after {
+  }
+
+  #form_6 {
+  }
+
+  #form_6::before {
+    content: '';
+    opacity: .4;
+  }
+
+  #form_6 .form_content {
+    padding: 0 7%;
+  }
+
+  #form_6 .form_content .form_title {
+  }
+
+  #form_6 .form_content .form_desc {
+  }
+
+  #form_6 .form_content .form_body {
+  }
+
+  #form_6 .form_content .form_body input {
+  }
+
+  #form_6 .form_content .form_body > *[placeholder] {
+  }
+
+  #form_6 .form_content .form_body textarea {
+  }
+
+  #form_6 .form_content .form_body button {
+  }
+
+  #form_6 .form_content .form_body input[name="name"] {
+  }
+
+  #form_6 .form_content .form_body input[name="tel"] {
+  }
+
+  #form_6 .form_content .form_body input[name="email"] {
+  }
+
+  #form_6 .form_content .form_body textarea[name="comment"] {
+  }
+
+  #form_6 .form_content .form_body button[type="submit"] {
+  }
+
+  #form_6 button[name="close"] {
+  }
+}
+
+/* .form_6 off */
+
+
+/* .form_7 on */
+.form_7_bg {
+  position: absolute;
+  position: fixed;
+  overflow: scroll;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  z-index: 9;
+  background: rgba(0,0,0,.68);
+}
+
+.form_7_bg::before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  width: 0;
+  vertical-align: middle;
+  z-index: 2;
+  position: relative;
+  z-index: 2;
+}
+
+.form_7_bg::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /*background-color: #000;*/
+  opacity: .68;
+  z-index: 1;
+}
+
+#form_7 {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 4% auto;
+  font-size: initial;
+  position: relative;
+  /* top: 7.1%; */
+  /* left: 18.5%; */
+  width: 90%;
+  max-width: 732px;
+  background-color: #fff;
+  /* background-image: url(../img/form_7_girl.jpg); */
+  /* background-size: contain; */
+  /* background-position: 0% 100%; */
+  /* background-repeat: no-repeat; */
+  z-index: 2;
+}
+#form_7::before {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  background-image: url(../img/form_7_bg.jpg);
+  /*background-size: contain;*/
+  /*background-position: -150px -100px;*/
+  background-repeat: no-repeat;
+  /* opacity: .3; */
+}
+
+.form_content {
+  z-index: 15 !important;
+}
+
+#form_7 .form_content {
+  box-sizing: border-box;
+  padding: 0 7% 0 38%;
+  position: relative;
+  z-index: 2;
+}
+
+#form_7 .form_content .form_title {
+  font-family: Roboto;
+  font-size: 30px;
+  color: #000;
+  margin: 8.5% 0 5.9% 0;
+  text-align: left;
+}
+
+#form_7 .form_content .form_desc {
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000;
+  margin: 0 0 1% 0;
+  text-align: left;
+}
+
+#form_7 .form_content .form_body {
+  margin: 10% 0 0 0;
+}
+
+#form_7 .form_content .form_body input {
+  background-color: #f4f4f4;
+  height: 41px;
+  border-radius: 12px;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 0 0 4%;
+  margin: 0 0 1.2% 0;
+  border: 1px solid rgba(0,0,0,0);
+  font-size: 16px;
+}
+
+#form_7 .form_content .form_body > *[placeholder] {
+  color: #5e5e5e;
+  font-family: Roboto;
+}
+
+#form_7 .form_content .form_body textarea {
+  background-color: #f4f4f4;
+  /* height: 41px; */
+  border-radius: 12px;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 4% 0 0 4%;
+  margin: 0 0 1.2% 0;
+  border: none;
+  border: 1px solid rgba(0,0,0,0);
+  font-size: 16px;
+  resize: none;
+}
+
+#form_7 .form_content .form_body button {
+  display: table;
+  border: none;
+  background-color: #dd2a1b;
+  font-family: Roboto;
+  font-size: 16px;
+  color: #fff;
+  margin: 3.9% auto 65px auto;
+  padding: 2.5% 10%;
+  position: relative;
+  border-radius: 20px;
+  left: -2%;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+
+#form_7 .form_content .form_body button:hover {
+  background: #000;
+}
+
+#form_7 .form_content .form_body input[name="name"] {
+}
+
+#form_7 .form_content .form_body input[name="tel"] {
+}
+
+#form_7 .form_content .form_body input[name="email"] {
+}
+
+#form_7 .form_content .form_body textarea[name="comment"] {
+}
+
+#form_7 .form_content .form_body button[type="submit"] {
+}
+
+#form_7 button[name="close"] {
+  width: 14px;
+  height: 12px;
+  position: absolute;
+  top: 3%;
+  right: 2.5%;
+  background: none;
+  background-image: url(../img/form_1_close_btn.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0 0;
+  z-index: 2;
+}
+
+@media(max-width: 680px) {
+  .form_7_bg {
+  }
+
+  .form_7_bg::before {
+  }
+
+  .form_7_bg::after {
+  }
+
+  #form_7 {
+  }
+
+  #form_7::before {
+    content: '';
+    opacity: .4;
+  }
+
+  #form_7 .form_content {
+    padding: 0 7%;
+  }
+
+  #form_7 .form_content .form_title {
+  }
+
+  #form_7 .form_content .form_desc {
+  }
+
+  #form_7 .form_content .form_body {
+  }
+
+  #form_7 .form_content .form_body input {
+  }
+
+  #form_7 .form_content .form_body > *[placeholder] {
+  }
+
+  #form_7 .form_content .form_body textarea {
+  }
+
+  #form_7 .form_content .form_body button {
+  }
+
+  #form_7 .form_content .form_body input[name="name"] {
+  }
+
+  #form_7 .form_content .form_body input[name="tel"] {
+  }
+
+  #form_7 .form_content .form_body input[name="email"] {
+  }
+
+  #form_7 .form_content .form_body textarea[name="comment"] {
+  }
+
+  #form_7 .form_content .form_body button[type="submit"] {
+  }
+
+  #form_7 button[name="close"] {
+  }
+}
+
+/* .form_7 off */
+

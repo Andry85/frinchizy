@@ -1,0 +1,23 @@
+.popover {background: #fff; width: 377px; background: #fff; border: 1px solid #ccc; padding: 6px; padding-bottom:10px; -webkit-border-radius:6px;-o-border-radius:6px; border-radius:6px; font-size: 14px; -moz-box-shadow: 0 2px 2px RGBA(0,0,0,0.3); -webkit-box-shadow:  0 2px 2px RGBA(0,0,0,0.3); box-shadow:  0 2px 2px RGBA(0,0,0,0.3); position: relative; }
+.popover .close {width: 14px; height: 14px; background: url(/images/root/close.jpg) 50% 50% no-repeat; right: 5px; top:5px; position: absolute; cursor: pointer; text-indent: -9999px;}
+.popover .arrow {position: absolute; left: 50%;   margin-left: -18px;
+  bottom: -38px; width: 38px; height: 39px; background:url(../images/root/teramg.png) 0 0 no-repeat;  }
+
+
+
+
+.popover .popover-content  { width: 377px;}
+.popover a.readon { display: block; width: 126px; height: 22px; line-height: 22px; color: #fff; font-size: 14px; margin-left: 49px; background:url(../images/root/receipt_readon.png) 0 0 no-repeat; margin-top: 15px; text-align: center; text-decoration: none; cursor: pointer  }
+.popover a.readon:hover {background-position: 0 100%}
+
+
+
+.popover .popover-content h4{
+		font-family: 'Roboto', sans-serif; font-weight:300; font-size:28px; text-align:center;    padding: 21px 0px 5px 0px;
+}
+.popover-content p{
+		font-family: 'Roboto', sans-serif; font-weight:100; font-size:18px; text-align:center;
+}
+.popover-content img{
+	    margin: 18px -16px 0px 24px;
+}
